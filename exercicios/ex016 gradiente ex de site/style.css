@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;    
+}/*configuração de todo o site "*"*/
+
+body{
+    background-image: linear-gradient(to top, #FDD5BC, #A65151); background-attachment: fixed; /*criei um degrade bem leve de cima para baixo*/
+}
+
+main/*criou uma caixa para meu texto*/{
+    background-color: white;/*cor da caixa*/
+    border-radius: 10px;/*arredonda a borda do quadro*/
+    box-shadow: 5px 5px 15px #59272d81;/*sombra da caixa*/
+    width: 600px;/*tamanho do main*/
+    padding: 10px; /*cria um espaçinho no final do texto (para o texto nao ficar colado na borda)*/
+    margin:auto /*centraliza o main*/
+}
+
+h1{/*altera todos os h1*/
+    color: #00403F; /*cor do texto*/
+    text-align: center;/*centraliza o texto*/
+    text-shadow: 1px 1px 2px #00403F; /*sombra do texto (Direita Pra baixo e desfocamento)*/  
+}
+
+h2{/*altera todos os h2*/
+    color: #59272D;/*cor da letra*/
+}
+
+p {
+    text-align: justify;/*centraliza o textoi*/
+}
