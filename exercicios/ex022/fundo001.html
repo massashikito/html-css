@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+
+        body{
+            background-image: url('imagens/wallpaper002.jpg');
+        }/*add uma imagem no fundo do corpo do meu site*/
+        div.quadrado{/*todas as minhas div terão essa config inicial*/
+            display: inline-block;/*alinha os blocos um ao lado do outro*/
+            border: 2px solid black;/*borda mais espessa e preta*/
+            border-radius: 10px;/*cantos arredondados*/
+            background-color: lightgray;/*cor antes de eu definir mais abaixo*/
+            width: 300px;/*largura*/
+            height: 300px;/*altura*/
+        }
+
+        div#q1{
+            background-color: skyblue/*cor solida*/
+        }
+        
+        div#q2{
+            background-image: linear-gradient(to bottom,yellow,red);/*degrade*/
+        }
+        div#q3{
+            background-image: url('imagens/pattern003.png');/*aqui add uma imagem atravez de uma url*/
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"><!--aqui add uma div na config dela deixei um quadrado-->
+        <h1>vida longa ao rei</h1>
+    </div>
+    <div class="quadrado" id="q2"><!--aqui add uma div na config dela deixei um quadrado-->
+        <h1>porque ele merece</h1>
+    </div>
+    <div class="quadrado" id="q3"><!--aqui add uma div na config dela deixei um quadrado-->
+        <h1>olha que doidera</h1>
+    </div>
+</body>
+</html>
