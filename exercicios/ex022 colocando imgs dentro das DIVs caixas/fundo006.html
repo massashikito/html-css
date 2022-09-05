@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;/*exibe 100% da pagina*/
@@ -13,11 +13,16 @@
             background-position: center center;/*posição da img*/
             background-repeat:repeat-y;/*não repete a img*/
             background-size: cover;/*auto=automatico, tam fixo em px ou em %, contain= 100%img cria faixas pretas nas laterais e em cima, cover faz corte na img e preenche a tela toda.*/
-        } /*fundo da minha page*/
+            background-attachment: fixed;
+
+            /*Shorthand - background
+            color > image > position > repeat > [size] >attachment*/
+            /*background:black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;*/
+        } /*config da minha page*/
 
         main {
             background-color: white;/*cor de fundo do main*/
-            width: 400px;/*tamanho do meu main*/
+            max-width: 400px;/*tamanho do meu main*/
             padding: 10px; /*borda pras letras não ficarem coladas na borda*/
             margin: auto;/*alinhamento centralizado*/
             border: 1px solid darkblue;/*config da borda*/
