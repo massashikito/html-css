@@ -13,7 +13,11 @@
         table {
             width: 400px; /*largura da minha tabela*/
             border-collapse: collapse;/*tirar os espaços entre os dados*/
-         
+            border: 5px solid blue;/*aqui é a borda da tabela*/
+        }
+
+        tr.linha {/*.criei uma class*/
+            background-color: gray;
         }
 
         td {
@@ -21,6 +25,9 @@
             padding: 8px;/*distancia dos dados para as linhas*/
         }
 
+        td.dado {/*posso criar quantas classes eu quiser aqui criei uma apenas para os dados da tabela*/
+            background-color: yellow;
+        }
     </style>
 </head>
 <body> 
@@ -39,20 +46,20 @@
             <td>B1</td> <!--2º table data-->
             <td>C1</td> <!--3º table data e asim por diante-->
         </tr>
-        <tr> <!--2ª linha-->
-            <td>A2</td>
+        <tr class="linha"> <!--2ª linha/ class linha só essa linha ficara gray-->
+            <td class="dado">A2</td><!--aqui apliquei a classe dado-->
             <td>B2</td>
             <td>C2</td>
         </tr>
         <tr><!--3ª linha-->
             <td>A3</td>
-            <td>B3</td>
+            <td class="dado">B3</td><!--aqui apliquei a classe dado-->
             <td>C3</td>
         </tr>
-        <tr><!--4ª linha-->
+        <tr class="linha"><!--4ª linha-->
             <td>A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td class="dado">C4</td><!--aqui apliquei a classe dado-->
         </tr>
     </table>
 
