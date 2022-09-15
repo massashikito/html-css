@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            /*position: relative; para deixar o cabeçalho */
         }
 
         td, th {
@@ -31,6 +32,10 @@
             background-color: gray;
             color: white;
         }
+
+        /*thead > tr > th {
+            position: sticky;
+        } não funcionou no meu navegador era pra deixar o cabeçalho fixo na tela*/
 
         tbody > tr:nth-child(2n) {/*2n significa de 2 em 2 efeito zebrado ao inves de usar 2n posso usar odd=impa ou even=par*/
             background-color: lightgray;
