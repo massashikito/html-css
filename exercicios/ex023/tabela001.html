@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px; /*largura da minha tabela*/
+            border-collapse: collapse;/*tirar os espaços entre os dados*/
+            border: 5px solid blue;/*aqui é a borda da tabela*/
+        }
+
+        tr.linha {/*.criei uma class*/
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;/*inserir bordas em volta de todos os dados*/
+            padding: 8px;/*distancia dos dados para as linhas*/
+        }
+
+        td.dado {/*posso criar quantas classes eu quiser aqui criei uma apenas para os dados da tabela*/
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+        tr= TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho da tabela
+            td= TABLE DATA = dado da tabela
+            a hierarquia da tabela é super importante. caso não seja respeitada saira tudo fora do lugar.
+    -->
+    <table>
+        <tr> <!--1ª linha-->
+            <td class="dado">A1</td> <!--1º table data-->
+            <td>B1</td> <!--2º table data-->
+            <td>C1</td> <!--3º table data e asim por diante-->
+        </tr>
+        <tr class="linha"> <!--2ª linha/ class linha só essa linha ficara gray-->
+            <td class="dado">A2</td><!--aqui apliquei a classe dado-->
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr><!--3ª linha-->
+            <td>A3</td>
+            <td class="dado">B3</td><!--aqui apliquei a classe dado-->
+            <td>C3</td>
+        </tr>
+        <tr class="linha"><!--4ª linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="dado">C4</td><!--aqui apliquei a classe dado-->
+        </tr>
+    </table>
+
+</body>
+</html>
