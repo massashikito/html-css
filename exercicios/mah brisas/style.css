@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+        @font-face {
+            font-family: top;
+            src: url('fonts/Gimme\ Danger.ttf') format('truetype');
+            }
+        /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetypo-aat (apple advanced typography)
+        - svg
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family:'top', Times, serif;
+            font-size: 3em;
+        }
+
+        p {
+            font-family:Satisfy, Helvetica, sans-serif;
+        }
