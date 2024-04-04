@@ -3,6 +3,17 @@
     "development"
   ],
   "hints": {
-    "highest-available-document-mode": "off"
-  }
+    "highest-available-document-mode": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 123"
+  ]
 }
